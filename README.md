@@ -1,9 +1,38 @@
-1. Fazer o adapter mostrar a imagem dependendo do saldo
-2. Incluir os métodos atualizar e remover no DAO
-3. Adicionar o listener para editar a conta e implementar a tela
-4. Incluir validações nas telas de adicionar e editar conta
-5. Implementar as operações de transferir, creditar, e debitar no BancoViewModel
-6. Fazer validação dos dados digitados ao realizar operações, ou usar um widget que carregue os valores existentes (Spinner, AutoCompleteTextView...)
-7. Mostrar o valor total de dinheiro armazenado no banco na tela principal
-8. [OPCIONAL] Incluir as telas para gerenciamento dee Clientes e ajustar implementação do BD para refletir relacionamento em que toda Conta tem 1 Cliente, mas 1 Cliente pode ter mais de 1 Conta - neste caso, ao adicionar uma conta tem que verificar se o Cliente é válido (existente)
-9. [OPCIONAL] Extrair as strings e traduzir a aplicação para outra língua
+
+<div  align="center">
+<img style="width:95px; margin-bottom: 46px;" align="center" src="https://github.com/Kleitomberg/Kbank_Android_App/blob/master/app/src/main/res/drawable/logo2togithub.png"/>
+</div>
+
+<p> Este é um aplicativo Android desenvolvido como primeira avaliação da disciplina de Programação para Plataformas Móveis: Android e React Native. O objetivo do aplicativo é permitir que um banco gerencie seus clientes e suas contas, possibilitando a realização de operações entre elas.</p>
+
+## Funcionalidades
+
+- Gerenciamento de clientes e contas bancárias
+- Transferência de valores entre contas
+
+## Tecnologias utilizadas
+- Java
+- Android Studio
+
+## Como executar o aplicativo
+Para executar o aplicativo, siga as instruções abaixo:
+
+Clone este repositório em sua máquina:
+```bash
+
+git clone https://github.com/Kleitomberg/Kbank_Android_App.git
+```
+
+
+Abra o Android Studio e importe o projeto
+
+Compile e execute o aplicativo em um dispositivo Android ou em um emulador
+
+## Capturas de tela
+
+<div align="center">
+  <img src="https://github.com/Kleitomberg/Kbank_Android_App/blob/master/app/src/main/res/drawable/layout.png" />
+</div>
+
+## Licença
+Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE.md para mais detalhes.
