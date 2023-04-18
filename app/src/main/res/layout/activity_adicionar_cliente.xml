@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_centerHorizontal="true"
+    android:padding="20dp">
+    <ImageView
+        android:id="@+id/back"
+        android:layout_marginBottom="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_ios_24"/>
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:text="@string/btn_add_cliente"
+        android:textColor="@color/blue_300"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/label_nome_cliente"
+        android:textColor="@color/blue_100"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nome_label"
+         />
+
+    <EditText
+        android:id="@+id/nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:textColorHint="@color/coorHint"
+        android:textStyle="normal"
+        android:layout_marginTop="6dp"
+        android:padding="8dp"
+        android:background="@drawable/bg_inputs"
+        android:fontFamily="sans-serif-light"
+        android:hint="@string/digite_um_nome_placehoulder"
+        android:minHeight="48dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/label_cpf_cliente"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cpf_label"
+        />
+
+    <EditText
+        android:id="@+id/cpf"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginBottom="12dp"
+        android:textColorHint="@color/coorHint"
+        android:textStyle="normal"
+        android:layout_marginTop="6dp"
+        android:padding="8dp"
+        android:background="@drawable/bg_inputs"
+        android:fontFamily="sans-serif-light"
+        android:hint="@string/digite_um_cpf_placehoulder"
+        android:minHeight="48dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/label_sexo_cliente"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sexo_label"
+        />
+    <!-- Campo de sexo -->
+    <RadioGroup
+
+        android:id="@+id/sexoRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/masculinoRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/blue_300"
+            android:text="@string/masculino" />
+
+        <RadioButton
+            android:buttonTint="@color/blue_300"
+            android:id="@+id/femininoRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/feminino" />
+
+    </RadioGroup>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAtualizarCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_card_blue"
+        android:layout_margin="16dp"
+        android:textAllCaps="false"
+        android:text="@string/btn_autalizar"
+        android:textColor="#FFFFFF" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@color/trasnparent"
+        android:id="@+id/btnRemoverCliente"
+        android:drawableStart="@drawable/ic_trash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/remover_txt"
+        android:gravity="fill"
+        android:layout_gravity=""
+        android:textAllCaps="false"
+        android:textColor="#F44336" />
+</LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:src="@drawable/baseline_arrow_back_ios_24" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:text="@string/realizar_busca"
+        android:textColor="@color/blue_300"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/pesquisa"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/bg_inputs"
+        android:drawableRight="@drawable/ic_search"
+        android:drawableTint="@color/blue_100"
+        android:hint="@string/buscar"
+        android:padding="12dp" />
+
+    <RadioGroup
+        android:id="@+id/tipoPesquisa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/peloNomeCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:buttonTint="@color/blue_300"
+            android:checked="true"
+            android:text="@string/nome_label"
+            android:textColor="@color/blue_300" />
+
+        <RadioButton
+            android:id="@+id/peloCPFcliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:buttonTint="@color/blue_300"
+            android:text="@string/cpf_label"
+            android:textColor="@color/blue_300" />
+
+        <RadioButton
+            android:id="@+id/peloNumeroConta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:buttonTint="@color/blue_300"
+            android:text="@string/n_mero_da_conta_label"
+            android:textColor="@color/blue_300" />
+    </RadioGroup>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_Pesquisar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/bg_card_blue"
+        android:text="@string/pesquisar"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/nenhum_result"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="@string/nenhum_resultado_encontrado" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvResultado"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp" />
+
+</LinearLayout>

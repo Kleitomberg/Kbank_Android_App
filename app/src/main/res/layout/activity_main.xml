@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_marginStart="16dp"
+        android:id="@+id/logo"
+        android:layout_width="125dp"
+        android:layout_height="65dp"
+        android:src="@drawable/logo2"
+        app:layout_constraintBottom_toTopOf="@id/RelativeLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+    <ImageView
+        android:id="@+id/btnPesquisar"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_margin="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_card"
+        android:gravity="center"
+        android:padding="10dp"
+        android:src="@drawable/ic_search"
+        app:layout_constraintBottom_toTopOf="@id/RelativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:padding="25dp"
+        android:id="@+id/RelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/bg_inferior"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/tot_bank"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue_300"
+            android:text="@string/total_no_banco"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_below="@id/tot_bank"
+            android:id="@+id/totalDinheiroBanco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue_300"
+            android:text="@string/tot_banco_valor"/>
+
+        <ImageView
+            android:tag="open"
+            android:id="@+id/show_valor"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_open_eyes"
+            android:layout_alignParentEnd="true"/>
+
+        <GridLayout
+            android:id="@+id/grid_layout"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/totalDinheiroBanco"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:useDefaultMargins="true">
+
+            <androidx.cardview.widget.CardView
+
+                android:clickable="true"
+                android:id="@+id/btnContas"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:layout_margin="16dp"
+                app:cardBackgroundColor="@color/blue_300"
+                android:background="@drawable/bg_card"
+                app:cardCornerRadius="8dp">
+                <LinearLayout
+                    android:padding="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/ic_contas"/>
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contas"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/btnTransferir"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:layout_margin="16dp"
+                app:cardBackgroundColor="@color/blue_300"
+                android:background="@drawable/bg_card"
+                app:cardCornerRadius="8dp">
+                <LinearLayout
+                    android:padding="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_trasnfer"/>
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/transferencia_txt"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btnDebitar"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:layout_margin="16dp"
+                app:cardBackgroundColor="@color/blue_300"
+                android:background="@drawable/bg_card"
+                app:cardCornerRadius="8dp">
+                <LinearLayout
+                    android:padding="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:src="@drawable/ic_debitar"/>
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/debitar_txt"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+            android:id="@+id/btnCreditar"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:layout_margin="16dp"
+            app:cardBackgroundColor="@color/blue_300"
+            android:background="@drawable/bg_card"
+            app:cardCornerRadius="8dp">
+            <LinearLayout
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/ic_creditar"/>
+                <TextView
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/creditar_txt"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btnClientes"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:layout_margin="16dp"
+                app:cardBackgroundColor="@color/blue_300"
+                android:background="@drawable/bg_card"
+                app:cardCornerRadius="8dp">
+                <LinearLayout
+                    android:padding="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:src="@drawable/ic_clientes"/>
+                    <TextView
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/clientes"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btnSettings"
+                android:layout_width="115dp"
+                android:layout_height="115dp"
+                android:layout_margin="16dp"
+                app:cardBackgroundColor="@color/blue_300"
+                android:background="@drawable/bg_card"
+                app:cardCornerRadius="8dp">
+                <LinearLayout
+                    android:padding="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:src="@drawable/ic_settings"/>
+                    <TextView
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/ajustes"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

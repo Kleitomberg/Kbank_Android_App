@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:padding="10dp"
+    android:clickable="true"
+    android:id="@+id/cardLinha"
+    cardview:cardBackgroundColor="@color/white_500"
+    android:background="@drawable/bg_card"
+    cardview:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:background="?android:attr/selectableItemBackground"
+        >
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:id="@+id/icone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="Icone"
+            android:padding="2dip"
+            android:src="@drawable/ic_positive" />
+
+        <LinearLayout
+
+            android:id="@+id/infoCliente"
+            android:layout_toEndOf="@id/icone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nomeCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kleitomberg santos"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/infonumero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4444"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_saldo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/saldo_atual"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/infoConta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="R$ 250,00"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Banco</string>
+    <string name="total_no_banco">Total no Banco</string>
+    <string name="tot_banco_valor">R$ 100,00</string>
+    <string name="transferencia_txt">Transferência</string>
+    <string name="debitar_txt">Debitar</string>
+    <string name="creditar_txt">Creditar</string>
+    <string name="adicionar_nova_conta">Adicionar nova conta</string>
+    <string name="n_mero_da_conta_label">Número da Conta</string>
+    <string name="nome_label">Nome</string>
+    <string name="cpf_label">CPF</string>
+    <string name="saldo_label">Saldo</string>
+    <string name="digite_o_n_mero_da_conta_placehoulder">Digite o número da conta</string>
+    <string name="digite_um_nome_placehoulder">Digite um nome</string>
+    <string name="digite_um_cpf_placehoulder">Digite um CPF</string>
+    <string name="digite_o_saldo_placehoulder">Digite o saldo</string>
+    <string name="remover_txt">Remover</string>
+    <string name="atualizar_txt_btn">Atualizar</string>
+    <string name="contas">Contas</string>
+    <string name="adicionar_conta_txt_btn">Adicionar conta</string>
+    <string name="tipo_da_opera_o">TIPO DA OPERAÇÃO</string>
+    <string name="n_mero_da_conta_origem">Número da Conta Origem</string>
+    <string name="n_mero_da_conta_destino">Número da Conta Destino</string>
+    <string name="valor_da_opera_o">Valor da operação</string>
+    <string name="digite_o_n_mero_da_conta">Digite o número da conta</string>
+    <string name="digite_o_valor">Digite o valor</string>
+    <string name="realizar_opera_o">Realizar Tranferência</string>
+    <string name="realizar_busca">Realizar Busca</string>
+    <string name="buscar">Buscar...</string>
+    <string name="pesquisar">Pesquisar</string>
+
+    <string name="clientes">Clientes</string>
+
+    <string name="ajustes">Ajustes</string>
+
+    <string name="sexo_label">Sexo</string>
+
+    <string name="btn_add_conta">Adicionar conta</string>
+
+    <string name="btn_add_cliente">Adicionar cliente</string>
+    <string name="btn_update_cliente">Atualizar cliente</string>
+    <string name="btn_autalizar">Atualizar</string>
+
+    <string name="btn_salvar">Salvar alterações</string>
+    <string name="txt_autalizar_conta">Atualizar conta</string>
+    <string name="masculino">Masculino</string>
+    <string name="feminino">Feminino</string>
+    <string name="saldo_atual">Saldo Atual</string>
+    <string name="selecionar_idioma">Selecione o idioma</string>
+    <string name="selecione_tema">Selecione o tema</string>
+    <string name="idioma">Idioma</string>
+    <string name="tema">Tema</string>
+    <string name="configtitle">Configurações gerais</string>
+    <string name="nenhum_resultado_encontrado">Nenhum resultado encontrado</string>
+
+
+</resources>

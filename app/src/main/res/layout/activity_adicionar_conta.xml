@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_marginBottom="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_ios_24"/>
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_marginBottom="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue_300"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:text="@string/adicionar_nova_conta"/>
+
+    <TextView
+        android:id="@+id/label_numero"
+        android:textColor="@color/blue_100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/n_mero_da_conta_label"
+        android:textSize="18sp" />
+
+    <EditText
+        android:textColorHint="@color/coorHint"
+        android:textStyle="normal"
+        android:layout_marginTop="6dp"
+        android:padding="8dp"
+        android:background="@drawable/bg_inputs"
+        android:id="@+id/numero"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="12dp"
+        android:inputType="number"
+        android:fontFamily="sans-serif-light"
+        android:hint="@string/digite_o_n_mero_da_conta_placehoulder"
+        android:minHeight="48dp"
+        android:textSize="18sp" />
+    <!--
+    <TextView
+        android:id="@+id/label_nome"
+        android:textColor="@color/blue_100"
+        android:layout_width="wrap_content"
+        android:visibility="invisible"
+        android:layout_height="wrap_content"
+        android:text="@string/nome_label"
+        android:textSize="18sp" />
+comentário aqui
+    <EditText
+
+        android:textColorHint="@color/coorHint"
+        android:textStyle="normal"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/blue_100"
+        android:padding="8dp"
+        android:background="@drawable/bg_inputs"
+        android:id="@+id/nome"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="sans-serif-light"
+        android:hint="@string/digite_um_nome_placehoulder"
+        android:minHeight="48dp"
+        android:textSize="18sp" />
+-->
+
+    <TextView
+        android:id="@+id/label_cpf"
+        android:textColor="@color/blue_100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cpf_label"
+        android:textSize="18sp" />
+
+    <EditText
+        android:textColorHint="@color/coorHint"
+        android:textStyle="normal"
+        android:layout_marginTop="6dp"
+        android:padding="8dp"
+        android:background="@drawable/bg_inputs"
+        android:id="@+id/cpf"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="sans-serif-light"
+        android:hint="@string/digite_um_cpf_placehoulder"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/label_saldo"
+        android:textColor="@color/blue_100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/saldo_label"
+        android:textSize="18sp" />
+
+    <EditText
+        android:textColorHint="@color/coorHint"
+        android:textStyle="normal"
+        android:layout_marginTop="6dp"
+        android:padding="8dp"
+        android:background="@drawable/bg_inputs"
+        android:id="@+id/saldo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
+        android:inputType="numberDecimal"
+        android:fontFamily="sans-serif-light"
+        android:hint="@string/digite_o_saldo_placehoulder"
+        android:minHeight="48dp"
+        android:textSize="18sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAtualizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/bg_card_blue"
+        android:text="@string/atualizar_txt_btn"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@color/trasnparent"
+        android:id="@+id/btnRemover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:drawableStart="@drawable/ic_trash"
+        android:text="@string/remover_txt"
+        android:textAllCaps="false"
+        android:textColor="#F44336" />
+    </LinearLayout>
+
+</LinearLayout>

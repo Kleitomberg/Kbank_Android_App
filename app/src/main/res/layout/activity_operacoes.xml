@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_marginBottom="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_ios_24"/>
+    <TextView
+        android:id="@+id/tipoOperacao"
+        android:layout_marginBottom="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue_300"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:text="@string/tipo_da_opera_o"/>
+
+    <TextView
+        android:textColor="@color/blue_100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/n_mero_da_conta_origem"
+        android:textSize="18sp" />
+
+    <EditText
+        android:textStyle="normal"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="12dp"
+        android:padding="8dp"
+        android:background="@drawable/bg_inputs"
+        android:id="@+id/numeroContaOrigem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:fontFamily="sans-serif-light"
+        android:hint="@string/digite_o_n_mero_da_conta"
+        android:minHeight="48dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:textColor="@color/blue_100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelContaDestino"
+        android:text="@string/n_mero_da_conta_destino"
+        android:textSize="18sp" />
+
+    <EditText
+        android:textStyle="normal"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="12dp"
+        android:padding="8dp"
+        android:background="@drawable/bg_inputs"
+        android:id="@+id/numeroContaDestino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:inputType="number"
+        android:fontFamily="sans-serif-light"
+        android:hint="@string/digite_o_n_mero_da_conta"
+        android:minHeight="48dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:textColor="@color/blue_100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/valor_da_opera_o"
+        android:textSize="18sp" />
+
+    <EditText
+        android:textStyle="normal"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="12dp"
+        android:padding="8dp"
+        android:background="@drawable/bg_inputs"
+        android:id="@+id/valor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:inputType="numberDecimal"
+        android:fontFamily="sans-serif-light"
+        android:hint="@string/digite_o_valor"
+        android:minHeight="48dp"
+        android:textSize="18sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnOperacao"
+        android:background="@drawable/bg_card_blue"
+        android:layout_width="match_parent"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/realizar_opera_o"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>

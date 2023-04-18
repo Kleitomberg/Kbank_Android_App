@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="language_list">
+        <item>Inglês</item>
+        <item>Português</item>
+        <item>Espanhol</item>
+    </string-array>
+    <string-array name="language_values">
+        <item>en</item>
+        <item>pt</item>
+        <item>es</item>
+    </string-array>
+    <string-array name="theme_list">
+        <item>Claro</item>
+        <item>Escuro</item>
+    </string-array>
+    <string-array name="theme_values">
+        <item>light</item>
+        <item>dark</item>
+    </string-array>
+</resources>
+

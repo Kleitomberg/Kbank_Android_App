@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:padding="10dp"
+    android:clickable="true"
+    android:id="@+id/cardLinha"
+    cardview:cardBackgroundColor="@color/white_500"
+    android:background="@drawable/bg_card"
+    cardview:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:background="?android:attr/selectableItemBackground"
+        >
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:id="@+id/cliente_profle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="Icone"
+            android:padding="2dip"
+            android:src="@drawable/ic_boy" />
+
+        <LinearLayout
+
+            android:id="@+id/infoCliente"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/cliente_profle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cliente_nome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kleitomberg santos"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/cliente_cpf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="128.022.912-15"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

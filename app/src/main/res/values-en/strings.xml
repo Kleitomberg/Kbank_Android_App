@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bank</string>
+    <string name="total_no_banco">Total in Bank</string>
+    <string name="tot_banco_valor">R$ 100.00</string>
+    <string name="transferencia_txt">Transfer</string>
+    <string name="debitar_txt">Debit</string>
+    <string name="creditar_txt">Credit</string>
+    <string name="adicionar_nova_conta">Add new account</string>
+    <string name="n_mero_da_conta_label">Account Number</string>
+    <string name="nome_label">Name</string>
+    <string name="cpf_label">CPF</string>
+    <string name="saldo_label">Balance</string>
+    <string name="digite_o_n_mero_da_conta_placehoulder">Enter account number</string>
+    <string name="digite_um_nome_placehoulder">Enter a name</string>
+    <string name="digite_um_cpf_placehoulder">Enter a CPF</string>
+    <string name="digite_o_saldo_placehoulder">Enter balance</string>
+    <string name="remover_txt">Remove</string>
+    <string name="atualizar_txt_btn">Update</string>
+    <string name="contas">Accounts</string>
+    <string name="adicionar_conta_txt_btn">Add Account</string>
+    <string name="tipo_da_opera_o">OPERATION TYPE</string>
+    <string name="n_mero_da_conta_origem">Source Account Number</string>
+    <string name="n_mero_da_conta_destino">Destination Account Number</string>
+    <string name="valor_da_opera_o">Operation Value</string>
+    <string name="digite_o_n_mero_da_conta">Enter the account number</string>
+    <string name="digite_o_valor">Enter the value</string>
+
+    <string name="realizar_opera_o">Perform transfer</string>
+
+
+    <string name="realizar_busca">Perform Search</string>
+    <string name="buscar">Search...</string>
+    <string name="pesquisar">Search</string>
+    <string name="clientes">Customers</string>
+
+    <string name="ajustes">Settings</string>
+
+    <string name="sexo_label">Gender</string>
+
+
+    <string name="btn_add_cliente">Add client</string>
+    <string name="btn_update_cliente">Update client</string>
+    <string name="btn_autalizar">Update</string>
+
+    <string name="btn_salvar">Save changes</string>
+    <string name="txt_autalizar_conta">Update account</string>
+
+    <string name="btn_add_conta">Add account</string>
+
+    <string name="feminino">Female</string>
+
+    <string name="masculino">Male</string>
+    <string name="saldo_atual">Current Balance</string>
+
+    <string name="selecionar_idioma">Select language</string>
+    <string name="selecione_tema">Select theme</string>
+    <string name="idioma">Language</string>
+    <string name="tema">Theme</string>
+    <string name="configtitle">General settings</string>
+    <string name="nenhum_resultado_encontrado">No results found</string>
+
+
+
+</resources>
